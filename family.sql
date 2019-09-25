@@ -13,6 +13,7 @@ insert into family(name, age, gender, status)
 insert into family(name, age, gender, status)
     value ('Ivan', 12, 'male', 'nephew')
 
+
 select *
 from family
 where name like '_a%';
