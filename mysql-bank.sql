@@ -146,7 +146,9 @@ group by City;
 select *
 from client
          join application on client.idClient = application.Client_idClient
-where Sum > 5000;
+where Sum > 5000
+  and Currency = 'gryvnia'
+  and CreditState = 'not returned';
 
 
 # 9.Порахувати кількість клієнтів усіх відділень та лише львівських відділень:
